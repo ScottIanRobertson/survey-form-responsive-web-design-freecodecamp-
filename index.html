@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scott's Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">Scott's Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help improve my portfolio website.
+    </p>
+    <form id="survey-form">
+      <label id="name-label"><h3>Name</h3></label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <label id="email-label"><h3>Email</h3></label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <label id="number-label"><h3>What do you rate this website? (Out of 5)</h3></label>
+      <input placeholder="0" type="number" id="number" max="5" min="0" />
+      <label id="dropdown-label"><h3>What best describes your current role?</h3></label>
+      <select id="dropdown">
+        <option>Website User</option>
+        <option>Employer</option>
+        <option>Web Developer</option>
+        <option>Learning Web Development</option>
+      </select>
+      <label id="radio-label"><h3>Would you recommend me as a Web Developer?</h3></label>
+      <input type="radio" name="recommend" value="no" />
+      <label for="no">No</label>
+      <input type="radio" name="recommend" value="maybe" />
+      <label for="maybe">Maybe</label>
+      <input type="radio" name="recommend" value="yes" />
+      <label for="yes">Yes</label>
+      <br />
+      <label><h3>What would improve the site?</h3></label>
+      <input type="checkbox" value="easier-to-use" />
+      <label for="easier-to-use">Make it easier to use</label>
+      <input type="checkbox" value="more-features" />
+      <label for="more-features">More features</label>
+      <br />
+      <label><h3>Comments</h3></label>
+      <textarea
+        type="text"
+        height="36"
+        width="36"
+        placeholder="Any comments?"
+      ></textarea>
+      <br>
+      <br>
+      <button type="submit" id="submit"><h3>Submit<h3></button>
+    </form>
+  </body>
+</html>
